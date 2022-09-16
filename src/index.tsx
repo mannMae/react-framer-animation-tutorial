@@ -6,6 +6,10 @@ import App from "./App";
 import { darkTheme } from "./theme";
 
 import { createGlobalStyle } from "styled-components";
+import Animate from "./Animate";
+import Slider from "./Slider";
+import LayoutAnimation from "./LayoutAnimation";
+import FinalApp from "./FinalApp";
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
@@ -77,7 +81,11 @@ ReactDOM.render(
     <RecoilRoot>
       <ThemeProvider theme={darkTheme}>
         <GlobalStyle />
-        <App />
+        {/* <App /> */}
+        {/* <Animate /> */}
+        {/* <Slider /> */}
+        {/* <LayoutAnimation /> */}
+        <FinalApp />
       </ThemeProvider>
     </RecoilRoot>
   </React.StrictMode>,
